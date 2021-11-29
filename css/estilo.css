@@ -1,0 +1,453 @@
+@media only screen and (min-width: 889px){
+	.grid{
+		display: grid;
+		grid-template-areas: 
+		"nav"
+		"main"
+		"footer" ;
+		grid-template-columns: auto;
+		grid-template-rows: 1fr 5fr 1fr;
+		overflow-x: hidden;
+	}
+	.navPpal{
+		grid-area: nav;
+		border: 5px solid;
+		width: 100%;
+		height: 100px;
+		background-image: linear-gradient(to right, black, #0099d4);
+	}
+	.mainPpal{
+		grid-area: main;
+		width: 100%;
+		height: 100%;
+	}
+	.footerPpal{
+		grid-area: footer;
+		border: 5px solid;
+		background-color: black;
+	}
+	
+	/* -----------------------------------------------nav----------------------------------------------------------------- */
+	.gridNav{
+		display: grid;
+		grid-template-areas: 
+		"logo barra";
+		grid-template-columns: 10% auto;
+		grid-template-rows: auto;
+	}
+	.logo{
+		grid-area: logo;
+		width: auto;
+		height: auto;
+	}
+	.logoEdit{
+		width: auto;
+		height: auto;
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.barra{
+		grid-area: barra;
+		width: auto;
+		height: auto;
+	}
+	/* -------------------------------------------------main--------------------------------------------------------------- */
+	.gridMain{
+		display: grid;
+		grid-template-areas: 
+		"title"
+		"content";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+		
+	}
+	.title{
+		grid-area: title;
+		width: auto;
+		height: auto;
+		font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		font-size: 25px;
+		text-align: center 
+	}
+	.content{
+		grid-area: content;
+		margin: 120px auto;
+		width: 100%;
+		height: auto;
+	}
+	/* ------------------------------------------------pag------------------------------------------------------------- */
+	.gridPag{
+		display: grid;
+		grid-template-areas: 
+		"navPag"
+		"mainPag"
+		"footerPag" ;
+		grid-template-columns: auto;
+		grid-template-rows: auto 4fr auto;
+		overflow-x: hidden;	
+	}
+	.navPag{
+		grid-area: navPag;
+		border: 5px solid;
+		width: 100%;
+		height: 100px;
+		background-color: black;
+	}
+	.mainPag{
+		grid-area: mainPag;
+		width: 100%;
+		height: 100%;
+	}
+	.footerPag{
+		grid-area: footerPag;
+		border: 5px solid;
+		background-color: black;
+	}
+	
+	.gridMainPag{
+		display: grid;
+		grid-template-areas: 
+		"foto"
+		"titulo"
+		"parrafo";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+	}
+	.foto{
+		grid-area: foto;
+	}
+	.fotoCabecera{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		
+	}
+	.titulo{
+		grid-area: titulo;
+		width: auto;
+		height: auto;
+		font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		font-size: 25px;
+		text-align: center 
+	}
+	.parrafo{
+		grid-area: parrafo;
+	}
+	
+	.gridNavPag{
+		display: grid;
+		grid-template-areas: 
+		"backPpal"
+		"mainMenu";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+		text-align: center;
+	}
+	.backPpal{
+		grid-area: backPpal;
+	}
+	.backPpal a{
+		text-decoration: none;
+		color: #0099d4;
+	}
+	.mainMenu{
+		grid-area: mainMenu;
+	}
+	
+	/* --------------------------------------------miscelaneo-------------------------------------------------------- */
+	.flex{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		list-style-type: none;
+	}
+	.pageBg{
+		background-image: url(../assets/belgrano4.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: auto;
+		height: auto;
+	}
+	li a{
+		text-decoration: none;
+		color: #0099d4;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.notCeleste li a{
+		text-decoration: none;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	p{
+		text-indent: 20px;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 20px;
+	}
+	iframe{
+		display: block;
+		margin: 0px auto;
+	} 
+	
+	
+}
+/* @media only screen and (min-width: 0px) and (max-width: 888px) {
+	.grid{
+		display: grid;
+		grid-template-areas: 
+		"nav"
+		"main"
+		"footer" ;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 5fr 1fr;
+		overflow-x: hidden;
+	}
+	.navPpal{
+		grid-area: nav;
+		border: 5px solid;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		font-size: 10px;
+	}
+	.mainPpal{
+		grid-area: main;
+		width: 100%;
+		height: 100%;
+	}
+	.footerPpal{
+		grid-area: footer;
+		border: 5px solid;
+		background-color: black;
+	}
+	
+	-----------------------------------------------nav----------------------------------------------------------------- 
+	.gridNav{
+		display: grid;
+		grid-template-areas: 
+		"logo barra";
+		grid-template-columns: 10% auto;
+		grid-template-rows: auto;
+	}
+	.logo{
+		grid-area: logo;
+		width: auto;
+		height: auto;
+		margin-left: 30px;
+	}
+	.logoEdit{
+		width: auto;
+		height: auto;
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.barra{
+		grid-area: barra;
+		width: auto;
+		height: auto;
+	}
+	/* -------------------------------------------------main--------------------------------------------------------------- 
+	.gridMain{
+		display: grid;
+		grid-template-areas: 
+		"title"
+		"content";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+		
+	}
+	.title{
+		grid-area: title;
+		width: auto;
+		height: auto;
+		font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		font-size: 20px;
+		text-align: center 
+	}
+	.content{
+		grid-area: content;
+		margin: 30px auto;
+		width: 100%;
+		height: auto;
+	}
+	/* ------------------------------------------------pag------------------------------------------------------------- 
+	.gridPag{
+		display: grid;
+		grid-template-areas: 
+		"navPag"
+		"mainPag"
+		"footerPag" ;
+		grid-template-columns: auto;
+		grid-template-rows: auto 4fr auto;	
+		overflow-x: hidden;
+	}
+	.navPag{
+		grid-area: navPag;
+		border: 5px solid;
+		width: 100%;
+		height: 100px;
+		background-color: black;
+	}
+	.mainPag{
+		grid-area: mainPag;
+		width: 100%;
+		height: 100%;
+	}
+	.footerPag{
+		grid-area: footerPag;
+		border: 5px solid;
+		background-color: black;
+	}
+	
+	.gridMainPag{
+		display: grid;
+		grid-template-areas: 
+		"foto"
+		"titulo"
+		"parrafo";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+	}
+	.foto{
+		grid-area: foto;
+	}
+	.fotoCabecera{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		
+	}
+	.titulo{
+		grid-area: titulo;
+		width: auto;
+		height: auto;
+		font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		font-size: 20px;
+		text-align: center 
+	}
+	.parrafo{
+		grid-area: parrafo;
+	}
+	
+	.gridNavPag{
+		display: grid;
+		grid-template-areas: 
+		"backPpal"
+		"mainMenu";
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 75%;
+		text-align: center;
+	}
+	.backPpal{
+		grid-area: backPpal;
+	}
+	.backPpal a{
+		text-decoration: none;
+		color: #0099d4;
+	}
+	.mainMenu{
+		grid-area: mainMenu;
+	}
+	
+	/* --------------------------------------------miscelaneo-------------------------------------------------------- 
+	.flex{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style-type: none;
+	}
+	.content .flex{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.content .flex li{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}	
+	.flex li{
+		margin: 0px 10px;
+	}
+	.pageBg{
+		background-image: url(../assets/belgrano4.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: auto;
+		height: auto;
+	}
+	li a{
+		text-decoration: none;
+		color: #0099d4;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.notCeleste li a{
+		text-decoration: none;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	p{
+		text-indent: 10px;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 10px;
+	}
+	iframe{
+		display: block;
+		margin: 0px auto;
+	} 
+}
+/* 
+
+
+
+
+.ppal--bg {
+	background-image: url(../assets/belgrano3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 800px;
+	height: 500px;
+}
+.ppal__lista{
+	margin: 0px auto;
+	border: 1px solid;
+	width: 50%;
+	height: 50%;
+}
+.subtitulo{
+	font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+	font-size: 25px;
+	text-align: center
+}
+.bloqueLinea ul li {
+	display: inline-block;
+	font-size: 20px;
+}
+.bloqueLinea ul 
+}
+
+header.main {
+	background-color: #0099d4;
+	position: sticky;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+header {
+	grid-area: nav;
+	background-color: black;
+	position: sticky;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+h5 a{
+	text-decoration: none;
+	color: #0099d4;
+}
+
+ */
