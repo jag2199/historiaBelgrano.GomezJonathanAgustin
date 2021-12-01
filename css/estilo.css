@@ -212,8 +212,12 @@
 	.imgSize{
 		transform: scale(1.5);
 	}
-	
-	
+	.text-edit{
+		text-decoration: none;
+	}
+	.bg-belgrano{
+		background-color: rgba(255, 255, 255, 0.5);
+	}
 }
 /* @media only screen and (min-width: 0px) and (max-width: 888px) {
 	.grid{
