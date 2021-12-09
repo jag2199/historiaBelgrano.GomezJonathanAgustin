@@ -1,0 +1,113 @@
+@media only screen and (min-width: 801px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 6fr 1fr;
+    overflow-x: hidden; }
+  .logoEdit {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px; }
+  .menuTranslate {
+    transition: 1s;
+    animation: fadeIn 3s ease-in 0s 1;
+    background-position: center; }
+    .menuTranslate:hover {
+      padding: 3.1%;
+      transform: translateY(-15px);
+      background-image: url(../assets/favicon.ico);
+      background-repeat: no-repeat;
+      background-position: top; }
+  .fade {
+    animation: fadeIn 4s ease-in 0s 1; }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0%; }
+    25% {
+      opacity: 25%; }
+    50% {
+      opacity: 50%; }
+    75% {
+      opacity: 75%; }
+    100% {
+      opacity: 100%; } }
+  .imgSize {
+    transform: scale(1.5); }
+  .pageBg {
+    background-image: url(../assets/belgrano4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto; }
+  .menuEdit {
+    margin-top: 12%; }
+  .bg-belgrano {
+    background-color: #0099d4 !important; }
+  .fotoCabecera {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  .bg-dark {
+    background-color: #2B352F !important; }
+  .letraTexto {
+    font-family: "Franklin Gothic Medium"; } }
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 6fr 1fr;
+    overflow-x: hidden; }
+  .logoEdit {
+    width: 100%;
+    height: auto;
+    min-width: 50px;
+    min-height: auto;
+    max-width: 100px;
+    max-height: 100px; }
+  .menuTranslate {
+    transition: 1s;
+    animation: fadeIn 3s ease-in 0s 1;
+    background-position: center; }
+  .menuTranslate:hover {
+    padding: 3.1%;
+    transform: translateY(-15px);
+    background-image: url(../assets/favicon.ico);
+    background-repeat: no-repeat;
+    background-position: top; }
+  .fade {
+    width: auto;
+    height: auto;
+    animation: fadeIn 4s ease-in 0s 1; }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0%; }
+    25% {
+      opacity: 25%; }
+    50% {
+      opacity: 50%; }
+    75% {
+      opacity: 75%; }
+    100% {
+      opacity: 100%; } }
+  .imgSize {
+    transform: scale(1.5); }
+  .pageBg {
+    background-image: url(../assets/belgrano4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto; }
+  .menuEdit {
+    margin-top: 12%; }
+  .bg-belgrano {
+    background-color: #0099d4 !important; }
+  .itemEdit {
+    padding-top: 3%; }
+  .bg-dark {
+    background-color: #2B352F !important; } }
