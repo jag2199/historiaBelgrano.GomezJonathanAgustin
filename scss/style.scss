@@ -1,2 +1,22 @@
-@import "desktop";
-@import "mobile";
+.menuTranslate{
+    @extend .fade;
+    transition:  1s;
+    background-position: center;
+
+    &:hover{
+        padding: 3.1%;
+        transform: translateY(-15px);
+        background-image: url(../assets/favicon.ico);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+.fade{
+    animation: fadeIn 4s ease-in 0s 1;
+}
+@media only screen and (min-width: 801px){ 
+    @import "desktop";
+}
+@media only screen and (min-width: 0px) and (max-width: 800px){
+    @import "mobile";
+}

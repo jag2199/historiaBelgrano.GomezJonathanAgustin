@@ -1,32 +1,23 @@
 @import "colores";
-@media only screen and (min-width: 801px){ 
+
 	.grid{
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: 1fr 6fr 1fr;
 		overflow-x: hidden;
 	}
+	@mixin limits($w, $h, $w2, $h2) {
+		max-width: $w;
+		max-height: $h;
+		min-width: $w2;
+		min-height: $h2;
+	}
 	.logoEdit{
 		width: 100%;
 		height: auto;
-		max-width: 100px;
-		max-height: 100px;
-	}
-	.menuTranslate{
-		transition:  1s;
-		animation: fadeIn 3s ease-in 0s 1;
-		background-position: center;
-	
-        &:hover{
-            padding: 3.1%;
-            transform: translateY(-15px);
-            background-image: url(../assets/favicon.ico);
-            background-repeat: no-repeat;
-            background-position: top;
-        }
-    }
-	.fade{
-		animation: fadeIn 4s ease-in 0s 1;
+		@include limits(100px, 100px, 50px, auto)
+		// max-width: 100px;
+		// max-height: 100px;
 	}
 	@keyframes fadeIn{
 		0%{opacity: 0%;}
@@ -49,19 +40,28 @@
 	.menuEdit{
 		margin-top: 12%;
 	}
-	.bg-belgrano{
-		background-color: $belgrano!important;
-	}
 	.fotoCabecera{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
 	}
+	$mapColores:(
+		dark: $negro,
+		belgrano: $belgrano
+	);
+	// @each $back, $color in $mapColores{
+	// 	.bg-#{$back}{
+	// 		background-color: $color!important;
+	// 	}                                            este tambien funcionaba pero pide map-get jajaj
+	// }
+	.bg-belgrano{
+		background-color: map-get($map: $mapColores, $key: belgrano)!important;
+	}
     .bg-dark{
-        background-color: $negro!important;
+        background-color: map-get($map: $mapColores, $key: dark)!important;
     }
+	
     .letraTexto{
         font-family: $letraPiola;
     }
-}

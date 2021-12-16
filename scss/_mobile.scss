@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0px) and (max-width: 800px){
+@import "colores";
 	.grid{
 		display: grid;
 		grid-template-areas: 
@@ -9,25 +9,18 @@
 		grid-template-rows: 1fr 6fr 1fr;
 		overflow-x: hidden; 
 	}
+	@mixin limits($w, $h, $w2, $h2) {
+		max-width: $w;
+		max-height: $h;
+		min-width: $w2;
+		min-height: $h2;
+	}
 	.logoEdit{
 		width: 100%;
 		height: auto;
-		min-width: 50px;
-		min-height: auto;
-		max-width: 100px;
-		max-height: 100px;
-	}
-	.menuTranslate{
-		transition:  1s;
-		animation: fadeIn 3s ease-in 0s 1;
-		background-position: center;
-	}
-	.menuTranslate:hover{
-		padding: 3.1%;
-		transform: translateY(-15px);
-		background-image: url(../assets/favicon.ico);
-		background-repeat: no-repeat;
-		background-position: top;
+		@include limits(100px, 100px, 50px, auto)
+		// max-width: 100px;
+		// max-height: 100px;
 	}
 	.fade{
 		width: auto;
@@ -58,10 +51,9 @@
 	.bg-belgrano{
 		background-color: $belgrano!important;
 	 }
-	.itemEdit{
-		padding-top: 3%;
-	}
     .bg-dark{
         background-color: $negro!important;
-    } 
-}
+    }
+	.itemEdit{
+		padding-top: 3%;
+	} 
