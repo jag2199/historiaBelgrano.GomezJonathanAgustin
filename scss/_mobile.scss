@@ -8,6 +8,8 @@
 		grid-template-columns: auto;
 		grid-template-rows: 1fr 6fr 1fr;
 		overflow-x: hidden; 
+		width: 100%;
+		height: 100%;
 	}
 	@mixin limits($w, $h, $w2, $h2) {
 		max-width: $w;
@@ -19,8 +21,7 @@
 		width: 100%;
 		height: auto;
 		@include limits(100px, 100px, 50px, auto)
-		// max-width: 100px;
-		// max-height: 100px;
+		
 	}
 	.fade{
 		width: auto;
@@ -44,16 +45,22 @@
 		background-size: cover;
 		width: auto;
 		height: auto;
+		overflow-x: hidden;
 	}
 	.menuEdit{
-		margin-top: 12%;
+		margin-top: 15%;
+		margin-bottom: 15%;
+		display: flex;
+		justify-content: center;
+		height: 100%;
 	}
-	.bg-belgrano{
-		background-color: $belgrano!important;
-	 }
-    .bg-dark{
-        background-color: $negro!important;
-    }
 	.itemEdit{
 		padding-top: 3%;
 	} 
+	.navDisplay{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.tablaEdit{
+		padding-left: 25%;
+	}

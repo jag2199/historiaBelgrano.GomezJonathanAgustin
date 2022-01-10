@@ -1,0 +1,85 @@
+    .gridContacto{
+        display: grid;
+		grid-template-areas: 
+		"navPpal"
+        "mainPpal"
+        "footerPpal";
+		grid-template-columns: auto;
+		grid-template-rows: 1fr 5fr 1fr;
+    }
+    .navPpal{
+		grid-area: navPpal;
+		border: 5px solid;
+		width: 100%;
+		height: 100px;
+		background-image: linear-gradient(to right, black, #0099d4);
+	}
+	.mainPpal{
+		grid-area: mainPpal;
+		width: 100%;
+		height: 100%;
+	}
+	.footerPpal{
+		grid-area: footerPpal;
+		border: 5px solid;
+		background-image: linear-gradient(to right, black, #0099d4);
+	}
+	
+	.gridNav{
+		display: grid;
+		grid-template-areas: 
+		"logo volver";
+		grid-template-columns: 10% auto;
+		grid-template-rows: auto;
+	} 
+	
+	.logo{
+        grid-area: logo;
+    }
+	.volver{
+		grid-area: volver;
+		width: auto;
+		height: auto;
+        color: black;
+    }
+	.gridMain{
+        display: grid;
+		grid-template-areas: 
+		"foto1 formulario foto2";
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: auto;
+    }
+    .foto1{
+        grid-area: foto1;    
+    }
+    .formulario{
+        grid-area: formulario;
+        border: 1px solid black;
+        background-color: #0099d4;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+    }
+    .foto2{
+        grid-area: foto2;
+    }
+	.flex{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        list-style-type: none;
+	}
+
+	iframe{
+		display: block;
+		margin: 0px auto;
+	} 
+
+	
+    .editFlex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    }
+    

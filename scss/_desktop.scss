@@ -19,6 +19,12 @@
 		// max-width: 100px;
 		// max-height: 100px;
 	}
+	.imgMenu{
+		transform: scale(0.5);
+		&:hover{
+			transform: scale(0.75);
+	    }
+	}
 	@keyframes fadeIn{
 		0%{opacity: 0%;}
 		25%{opacity: 25%;}
@@ -36,9 +42,14 @@
 		background-size: cover;
 		width: auto;
 		height: auto;
+		overflow-x: hidden;
 	}
 	.menuEdit{
-		margin-top: 12%;
+		margin-top: 15%;
+		margin-bottom: 15%;
+		display: flex;
+		justify-content: center;
+		height: 100%;
 	}
 	.fotoCabecera{
 		display: block;
@@ -46,22 +57,7 @@
 		margin-right: auto;
 		width: 50%;
 	}
-	$mapColores:(
-		dark: $negro,
-		belgrano: $belgrano
-	);
-	// @each $back, $color in $mapColores{
-	// 	.bg-#{$back}{
-	// 		background-color: $color!important;
-	// 	}                                            este tambien funcionaba pero pide map-get jajaj
-	// }
-	.bg-belgrano{
-		background-color: map-get($map: $mapColores, $key: belgrano)!important;
+	.iframeEdit{
+		padding-top: 10%;
 	}
-    .bg-dark{
-        background-color: map-get($map: $mapColores, $key: dark)!important;
-    }
-	
-    .letraTexto{
-        font-family: $letraPiola;
-    }
+    

@@ -16,76 +16,84 @@
     <title>Identidad</title>
 </head>
 
-<body>
-    <header class="container-fluid">
-        <div class="row bg-dark fixed-top">
-            <!-- ESCUDO -->
-            <div class="col-lg-1 col-8">
-                <a href="../index.html"><img class="logo logoEdit" src="../assets/logo.png" alt="logo CAB"></a>
+<body class="grid pageBg container-fluid">
+    <header class="row bg-dark navDisplay">
+        <!-- ESCUDO -->
+        <div class="col-lg-1 col-6 d-flex justify-content-center">
+            <a href="../index.html"><img class="logo logoEdit" src="../assets/logo.png" alt="logo CAB"></a>
+        </div>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light col-lg-11 col-6 bg-dark justify-content-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="../pages/club.html">Club</a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="../pages/estadio.html">Estadio</a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="../pages/torneos.html">Torneos</a>
+                    </li>
+                    <li class="nav-item border-right">
+                        <a class="nav-link" href="../pages/actualidad.html">Actualidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Identidad</a>
+                    </li>
+                </ul>
+                </ul>
             </div>
-            <!-- NAV -->
-            <nav class="navbar navbar-expand-lg navbar-light col-lg-11 col-4 bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item border-right">
-                            <a class="nav-link" href="../pages/club.html">Club</a>
-                        </li>
-                        <li class="nav-item border-right">
-                            <a class="nav-link" href="../pages/estadio.html">Estadio</a>
-                        </li>
-                        <li class="nav-item border-right">
-                            <a class="nav-link" href="../pages/torneos.html">Torneos</a>
-                        </li>
-                        <li class="nav-item border-right">
-                            <a class="nav-link" href="../pages/actualidad.html">Actualidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Identidad</a>
-                        </li>
-                    </ul>
-                    </ul>
-                </div>
-            </nav>
+        </nav>
     </header>
-    <main class="pageBg">
-        <div>
-            <hr>
-            <h1 class="titulo">Cancionero belgrano</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2BhTXuzSp-A" title="Cancionero belgrano"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <hr>
+    <main class="row h-100 text-center">
+        <!-- CANCIONERO -->
+        <div class="col-lg-6 col-12 border border-dark bg-belgrano justify-content-center align-items-center ">
+            <h2 class="titulo">Cancionero Belgrano</h2>
+            <div style="max-width: 3fr; margin-top: 50px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2BhTXuzSp-A"
+                    title="Cancionero belgrano" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- MAPA -->
+        <div class=" col-lg-6 col-12 border border-dark bg-belgrano justify-content-center align-items-center">
+            <h2 class="titulo">Ubicación</h2>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.3919262225754!2d-64.20895708489729!3d-31.403326181408474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988e27e605e9%3A0xca5a6701c330c816!2sEstadio%20Julio%20C%C3%A9sar%20Villagra%20Club%20Atl%C3%A9tico%20Belgrano!5e0!3m2!1ses!2sar!4v1641707312070!5m2!1ses!2sar"
+                    width="75%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
         </div>
     </main>
-    <footer class="container-fluid">
-        <div class="row bg-dark align-items-center">
-            <div class="col-lg-3 d-flex justify-content-center col-3">
-                <!-- LOGO -->
-                <img class="logoEdit" src="../assets/logo.png" alt="logo calaca">
-            </div>
-            <div class="col-lg-3 d-flex justify-content-center col-3">
-                <!-- TW -->
-                <a href="https:/www.twitter.com/Belgrano">
-                    <img class="imgSize " width="50px" height="50px" src="../assets/tw2.png" alt="twitter">
-                </a>
-            </div>
-            <div class="col-lg-3 d-flex justify-content-center col-3">
-                <!-- IG -->
-                <a href="https:/www.instagram.com/clubatleticobelgrano">
-                    <img class="imgSize" width="50px" height="50px" src="../assets/ig.png" alt="instagram">
-                </a>
-            </div>
-            <div class="col-lg-3 d-flex justify-content-center col-3">
-                <!-- FB -->
-                <a href="https:/www.facebook.com">
-                    <img class="imgSize" width="50px" height="50px" src="../assets/fb2.png" alt="facebook">
-                </a>
-            </div>
+    <footer class="row bg-dark align-items-center">
+        <div class="col-lg-3 d-flex justify-content-center col-3">
+            <!-- LOGO -->
+            <img class="logoEdit" src="../assets/logo.png" alt="logo calaca">
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center col-3">
+            <!-- TW -->
+            <a href="https:/www.twitter.com/Belgrano">
+                <img class="imgSize" width="50px" height="50px" src="../assets/tw2.png" alt="twitter">
+            </a>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center col-3">
+            <!-- IG -->
+            <a href="https:/www.instagram.com/clubatleticobelgrano">
+                <img class="imgSize" width="50px" height="50px" src="../assets/ig.png" alt="instagram">
+            </a>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center col-3">
+            <!-- FB -->
+            <a href="https:/www.facebook.com">
+                <img class="imgSize" width="50px" height="50px" src="../assets/fb2.png" alt="facebook">
+            </a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
